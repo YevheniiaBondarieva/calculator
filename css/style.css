@@ -1,0 +1,122 @@
+/* Write your styles here */
+.container{
+    max-width: 850px;
+    margin: 10vh auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-calculator {
+    max-width: 400px;
+    padding: 1.7rem;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+    border-radius: 0.7rem;
+    background-color:  rgb(68, 81, 108);
+    border: 3px solid black;
+}
+
+.form-control{
+    text-align: right;
+    height: 60px;
+    line-height: 50px;
+    padding: 8px 6px;
+    font-size: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+
+
+.buttons {
+    display: grid;
+    border-bottom: 1px double  #999;
+    border-left: 1px  double  #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.buttons >div{
+    border-top: 1px double  #999;
+    border-right: 1px double  #999;
+}
+
+.button {
+    border: 3px double #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(167, 177, 198);
+    font-weight: bold;
+}
+
+.empty {
+    border: 3px double #999;
+    background-color: rgb(68, 81, 108);
+}
+
+.button:hover{
+    background-color:  rgb(68, 81, 108);
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+#logs{
+    height: 650px; 
+    box-sizing: border-box;
+    margin-left: 30px;
+    overflow-y: auto;
+}
+
+.log{
+    display: grid;
+    box-sizing: border-box;
+    max-width: 450px;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.circle {
+    border-radius: 50%;
+	  height: 25px;
+	  width: 25px;
+	  border: 2px solid red;
+}
+
+.circle:hover{
+    background-color: red;
+}
+
+.circleSelected{
+    background-color: red;
+}
+
+.circle:hover{
+    background-color: red;
+}
+
+.log>p{
+ font-size: 19px;
+}
+
+.filteredLog{
+    text-decoration: underline;
+}
+
+.closeIcon::after{ 
+    content: "\2716"; 
+    font-size: 25px;
+}
+
+.closeIcon:hover{
+    color: red;
+}
+
+.result_48_true{
+    text-decoration: underline;
+}
